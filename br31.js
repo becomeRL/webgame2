@@ -61,4 +61,4 @@ br31.addEventListener('click', function(){
     }
 })
 
-    
+document.getElementById("content").innerHTML = text;    
