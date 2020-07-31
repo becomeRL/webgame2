@@ -39,10 +39,37 @@ br31.addEventListener('click', function(){
                 lastNum = num;
                 break;
             }
-        choice2 = random(1, 3);
         num += choice2;
-        alert(name2 + "가 " + choice2 + "를 더하여 " + num + "이 되었습니다.");
-            if(num >= 31){
+        choice2 = Number(prompt(name2 + "가 " + choice2 + "를 더하여 " + num + "이 되었습니다."));
+            if(num == 27){
+                choice2 = 3;
+                last = name2;
+                lastChoice = choice2;
+                lastNum = num;
+                
+            }
+            else if(num == 28){
+                choice2 = 2;
+                last = name2;
+                lastChoice = choice2;
+                lastNum = num;
+                
+            }
+            else if(num == 29){
+                choice2 = 1;
+                last = name2;
+                lastChoice = choice2;
+                lastNum = num;
+                
+            }
+            else if (num <= 26){
+                choice2 = random(1,3)
+                last = name2;
+                lastChoice = choice2;
+                lastNum = num;
+                
+            }
+            else if(num >= 31){
                 last = name2;
                 lastChoice = choice2;
                 lastNum = num;
@@ -59,6 +86,7 @@ br31.addEventListener('click', function(){
     } else{
         document.getElementById("content").innerHTML = name2 + "가 " + lastChoice + "을 더하여 " + lastNum + "이 되었습니다. <br>" + name1 + " 승";
     }
-})
-
-document.getElementById("content").innerHTML = text;    
+}
+)
+document.getElementById("content").innerHTML = text;
+    
