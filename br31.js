@@ -36,12 +36,14 @@ br31.addEventListener('click', function(){
                 alert("취소되었습니다");
                 return;
             }
-            if(choice1 > 3 || choice1 < 1){
+            if(choice1 = isNaN ||choice1 > 3 || choice1 < 1){
                 alert("반칙입니다");
                 return;
-            }  
+            }
+              
             
         num += choice1;
+        document.getElementById("game1").innerHTML = "현재 수는 " + num + "입니다.";
         alert(name1 + "이/가 " + choice1 + "를 더하여 " + num + "이 되었습니다.");
             if(num >= 31){
                 last = name1;
@@ -78,6 +80,7 @@ br31.addEventListener('click', function(){
             
         }
         num += choice2;
+        document.getElementById("game1").innerHTML = "현재 수는 " + num + "입니다.";
         alert(name2 + "가 " + choice2 + "를 더하여 " + num + "이 되었습니다.");
             if(num >= 31){
                 last = name2;
@@ -93,8 +96,8 @@ br31.addEventListener('click', function(){
 
     if(last === name1){
         document.getElementById("game1").innerHTML = name1 + "이/가 " + lastChoice + "을 더하여 " + lastNum + "이 되었습니다. <br>" + name2 + " 승";
-    } else if(choice1 > 3 || choice1 < 1){
-        document.getElementById("game1").innerHTML = name1 + "이/가 " + choice1 + "을 더하여 반칙으로 처리되었습니다. <br>" + name2 + " 승";
+    } else if(choice1 = isNaN || choice1 > 3 || choice1 < 1){
+        document.getElementById("game1").innerHTML = name1 + "이/가 반칙으로 처리되었습니다. <br>" + name2 + " 승";
     }else{
         document.getElementById("game1").innerHTML = name2 + "가 " + lastChoice + "을 더하여 " + lastNum + "이 되었습니다. <br>" + name1 + " 승";
     }
