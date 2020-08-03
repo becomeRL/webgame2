@@ -70,10 +70,10 @@ br33.addEventListener('click', function(){
 
     if(last === name1){
         document.getElementById("game3").innerHTML = name1 + "이/가 " + lastChoice + "을 더하여 " + lastNum + "이 되었습니다. <br>" + name2 + " 승";
-    } else if(choice1 > 3 || choice1 < 1){
-        document.getElementById("game3").innerHTML = name1 + "이/가 " + choice1 + "을 더하여 반칙으로 처리되었습니다. <br>" + name2 + " 승";
-    }else if(choice2 > 3 || choice2 < 1){
-        document.getElementById("game3").innerHTML = name2 + "이/가 " + choice2 + "을 더하여 반칙으로 처리되었습니다. <br>" + name1 + " 승";
+    } else if(choice1 = isNaN || choice1 > 3 || choice1 < 1){
+        document.getElementById("game3").innerHTML = name1 + "이/가 반칙으로 처리되었습니다. <br>" + name2 + " 승";
+    }else if(choice1 = isNaN || choice2 > 3 || choice2 < 1){
+        document.getElementById("game3").innerHTML = name2 + "이/가 반칙으로 처리되었습니다. <br>" + name1 + " 승";
     }else{
         document.getElementById("game3").innerHTML = name2 + "이/가 " + lastChoice + "을 더하여 " + lastNum + "이 되었습니다. <br>" + name1 + " 승";
     }
