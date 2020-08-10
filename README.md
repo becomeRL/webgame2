@@ -1,6 +1,6 @@
-# 순광이는 못말려~
+# 베스킨라빈스31 
 ## Web Game 2 by Mangi Choe
-
+#### JavaScipt 연습 겸 test    사실상 web game 1.
 
 * 게임 방법 ( How to Play )
     1. [순광이는 못말려~](https://lightningchoe.github.io/webgame2 'game link')에 접속을 한다.
